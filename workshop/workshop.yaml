@@ -1,0 +1,14 @@
+name: Getting Started with Kpack
+
+modules:
+    activate:
+    - workshop-overview
+    - setup-environment
+    - exercises/01-reg-secret
+    - exercises/02-reg-service-account
+    - exercises/03-create-store
+    - exercises/04-apply-cluster-stack
+    - exercises/05-apply-builder
+    - exercises/06-image-config
+    - exercises/07-watch-build
+    - workshop-summary
