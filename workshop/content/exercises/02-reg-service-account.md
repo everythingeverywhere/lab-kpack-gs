@@ -12,9 +12,9 @@ text: |
         metadata:
           name: registry-service-account
         secrets:
-        - name: registry-registry-credentials
+        - name: registry-credentials
         imagePullSecrets:
-        - name: registry-registry-credentials
+        - name: registry-credentials
 ```
 
 Apply your new service account.

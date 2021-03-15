@@ -9,7 +9,7 @@ You'll need a secret with credentials to access your container registry, so crea
 To create the `registry-credentials.yaml` manifest:
 
 ```editor:append-lines-to-file
-file: ~/registry-registry-credentials.yaml
+file: ~/credentials.yaml
 text: |
         apiVersion: v1
         kind: Secret
@@ -26,6 +26,6 @@ text: |
 
 Apply your secret.
 ```execute-1
-kubectl apply -f registry-registry-credentials.yaml
+kubectl apply -f registry-credentials.yaml
 ```
 

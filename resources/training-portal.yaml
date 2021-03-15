@@ -7,7 +7,7 @@ spec:
     registration:
       type: anonymous
   workshops:
-  - name: lab-kpack
+  - name: lab-kpack-gs
     capacity: 1
     expires: 60m
     orphaned: 5m
