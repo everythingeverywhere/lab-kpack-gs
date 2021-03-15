@@ -5,10 +5,10 @@ Now you're all ready to start building images and pushing them to your registry.
 Applying your image config will enable automation to build your new image.
 This build will take a few minutes and will be subsequently faster each time you run as it has a cache. 
 
-- Change `spec.tag` to your registry address appending `/app` or a name of your choosing to hold your app.
-- Change `spec.serviceAccount` to your service account's name.
-- At `spec.source.git.url` is the source code being used to build the app.
-- The `spec.source.git.revision` is the commit used to build, a change here is one way to trigger a new build!
+- The `spec.tag` is your registry address with `/app` appended (or a name of your choosing) to hold your app.
+- The `spec.serviceAccount` is your service account's name.
+- The `spec.source.git.url` is the source code being used to build the app.
+- The `spec.source.git.revision` is the commit used to build. A change here is one way to trigger a new build!
 
 ```editor:append-lines-to-file
 file: ~/registry-image.yaml

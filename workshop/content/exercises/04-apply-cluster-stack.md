@@ -7,7 +7,7 @@ The [pack CLI](https://github.com/buildpacks/pack) command: `pack suggest-stacks
 Now, create your stack.
 `stack.yaml`
 ```editor:append-lines-to-file
-file: ~/registry-service-account.yaml
+file: ~/stack.yaml
 text: |
         apiVersion: kpack.io/v1alpha1
         kind: ClusterStack

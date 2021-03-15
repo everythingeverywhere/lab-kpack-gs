@@ -5,7 +5,7 @@ A store is a repository of [buildpacks](http://buildpacks.io/) packaged into [bu
 Create your store of buildpacks.
 `store.yaml`
 ```editor:append-lines-to-file
-file: ~/registry-service-account.yaml
+file: ~/store.yaml
 text: |
         apiVersion: kpack.io/v1alpha1
         kind: ClusterStore
