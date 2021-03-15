@@ -4,6 +4,9 @@ minikube start --insecure-registry=192.168.64.0/24 --cpus=4 --memory=8g --vm
 minikube addons enable ingress
 minikube addons enable ingress-dns
 
+kubectl apply -f ./deleteme/release-0.2.2.yaml 
+kubectl apply -f ./deleteme/kpacks
+
 # Install operator
 kubectl apply -k "github.com/eduk8s/eduk8s?ref=master"
 
