@@ -26,3 +26,36 @@ spec:
         enabled: true
       registry:
         enabled: true
+    objects:
+    - apiVersion: rbac.authorization.k8s.io/v1
+      kind: Role
+      metadata:
+        name: kpack-user
+      rules:
+      - apiGroups:
+        - kpack.io
+        resources:
+        - builds
+        - builders
+        - images
+        - sourceresolvers
+        verbs:
+        - get
+        - list
+        - watch
+        - create
+        - delete
+        - patch
+        - update
+    - apiVersion: rbac.authorization.k8s.io/v1
+      kind: RoleBinding
+      metadata:
+        name: kpack-user
+      roleRef:
+        apiGroup: rbac.authorization.k8s.io
+        kind: Role
+        name: kpack-user
+      subjects:
+      - kind: ServiceAccount
+        namespace: $(workshop_namespace)
+        name: $(service_account)

@@ -1,7 +1,3 @@
-## Using `kpack`
-
-### Set Up Container Registry Secret
-
 The first thing you need to do is tell `kpack` how to access the container registry to upload the completed images when they're done. 
 
 You'll need a secret with credentials to access your container registry, so create the manifest `registry-credentials.yaml` and apply it with `kubectl apply -f`.
