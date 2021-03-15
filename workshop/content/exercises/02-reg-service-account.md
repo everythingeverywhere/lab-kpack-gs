@@ -5,19 +5,19 @@ Now you need a service account referencing those credentials in your secret.
 
 The manifest is pretty simple:
 ```editor:append-lines-to-file
-file: ~/dockerhub-service-account.yaml
+file: ~/registry-service-account.yaml
 text: |
         apiVersion: v1
         kind: ServiceAccount
         metadata:
-        name: dockerhub-service-account
+          name: registry-service-account
         secrets:
-        - name: dockerhub-registry-credentials
+        - name: registry-registry-credentials
         imagePullSecrets:
-        - name: dockerhub-registry-credentials
+        - name: registry-registry-credentials
 ```
 
 Apply your new service account.
 ```execute-1
-kubectl apply -f dockerhub-service-account.yaml
+kubectl apply -f registry-service-account.yaml
 ``` 

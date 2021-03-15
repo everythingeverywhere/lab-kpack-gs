@@ -12,22 +12,23 @@ This build will take a few minutes and will be subsequently faster each time you
 
 ```editor:append-lines-to-file
 file: ~/registry-image.yaml
-text: |
+text: |  
         apiVersion: kpack.io/v1alpha1
         kind: Image
         metadata:
-        name: petclinic-image
-        namespace: default
+          name: petclinic-image
+          namespace: default
         spec:
-        tag: {{ registry_host }}/app
-        serviceAccount: dockerhub-service-account
-        builder:
+          tag: {{ registry_host }}/app
+          serviceAccount: registry-service-account
+          builder:
             name: my-builder
             kind: Builder
-        source:
+          source:
             git:
-            url: https://github.com/spring-projects/spring-petclinic
-            revision: 82cb521d636b282340378d80a6307a08e3d4a4c4
+              url: https://github.com/spring-projects/spring-petclinic
+              revision: 82cb521d636b282340378d80a6307a08e3d4a4c4
+
 
 ```
 

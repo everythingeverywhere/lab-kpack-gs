@@ -15,37 +15,37 @@ Kpack will push the builder image to your registry.
 
 ```editor:append-lines-to-file
 file: ~/builder.yaml
-text: |
+text: | 
         apiVersion: kpack.io/v1alpha1
         kind: Builder
         metadata:
-        name: my-builder
-        namespace: default
+          name: my-builder
+          namespace: default
         spec:
-        serviceAccount: dockerhub-registry-service-account
-        tag: {{ registry_host }}/builder
-        stack:
+          serviceAccount: registry-registry-service-account
+          tag: {{ registry_host }}/builder
+          stack:
             name: base
             kind: ClusterStack
-        store:
+          store:
             name: default
             kind: ClusterStore
-        order:
-        - group:
+          order:
+          - group:
             - id: paketo-buildpacks/java
-        - group:
+          - group:
             - id: paketo-buildpacks/java-azure
-        - group:
+          - group:
             - id: paketo-buildpacks/graalvm
-        - group:
+          - group:
             - id: paketo-buildpacks/nodejs
-        - group:
+          - group:
             - id: paketo-buildpacks/dotnet-core
-        - group:
+          - group:
             - id: paketo-buildpacks/go
-        - group:
+          - group:
             - id: paketo-buildpacks/php
-        - group:
+          - group:
             - id: paketo-buildpacks/nginx
 ```
 

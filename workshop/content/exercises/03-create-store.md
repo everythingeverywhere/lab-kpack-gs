@@ -5,22 +5,22 @@ A store is a repository of [buildpacks](http://buildpacks.io/) packaged into [bu
 Create your store of buildpacks.
 `store.yaml`
 ```editor:append-lines-to-file
-file: ~/dockerhub-service-account.yaml
+file: ~/registry-service-account.yaml
 text: |
         apiVersion: kpack.io/v1alpha1
         kind: ClusterStore
         metadata:
-        name: default
+          name: default
         spec:
-        sources:
-        - image: gcr.io/paketo-buildpacks/java
-        - image: gcr.io/paketo-buildpacks/graalvm
-        - image: gcr.io/paketo-buildpacks/java-azure
-        - image: gcr.io/paketo-buildpacks/nodejs
-        - image: gcr.io/paketo-buildpacks/dotnet-core
-        - image: gcr.io/paketo-buildpacks/go
-        - image: gcr.io/paketo-buildpacks/php
-        - image: gcr.io/paketo-buildpacks/nginx
+          sources:
+          - image: gcr.io/paketo-buildpacks/java
+          - image: gcr.io/paketo-buildpacks/graalvm
+          - image: gcr.io/paketo-buildpacks/java-azure
+          - image: gcr.io/paketo-buildpacks/nodejs
+          - image: gcr.io/paketo-buildpacks/dotnet-core
+          - image: gcr.io/paketo-buildpacks/go
+          - image: gcr.io/paketo-buildpacks/php
+          - image: gcr.io/paketo-buildpacks/nginx
 
   ```
   

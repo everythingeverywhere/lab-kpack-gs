@@ -6,7 +6,7 @@ modules:
         name: Setup Environment
         exit_sign: Start Workshop
     exercises/01-reg-secret:
-        name: Sample Content
+        name: Set Up Container Registry Secret
     exercises/02-reg-service-account:
         name: Set Up Container Registry Service Account
     exercises/03-create-store:

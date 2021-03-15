@@ -7,17 +7,17 @@ The [pack CLI](https://github.com/buildpacks/pack) command: `pack suggest-stacks
 Now, create your stack.
 `stack.yaml`
 ```editor:append-lines-to-file
-file: ~/dockerhub-service-account.yaml
+file: ~/registry-service-account.yaml
 text: |
         apiVersion: kpack.io/v1alpha1
         kind: ClusterStack
         metadata:
-        name: base
+          name: base
         spec:
-        id: "io.buildpacks.stacks.bionic"
-        buildImage:
+          id: "io.buildpacks.stacks.bionic"
+          buildImage:
             image: "paketobuildpacks/build:base-cnb"
-        runImage:
+          runImage:
             image: "paketobuildpacks/run:base-cnb"
 ```
 
