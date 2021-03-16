@@ -39,7 +39,7 @@ text: |
         kind: Image
         metadata:
           name: petclinic-image
-          namespace: default
+          namespace: {{session_namespace}}
         spec:
           tag: {{ registry_host }}/app
           serviceAccount: registry-service-account
