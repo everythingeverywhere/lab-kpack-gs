@@ -22,7 +22,7 @@ text: |
           name: my-builder
           namespace: {{workshop_namespace}}
         spec:
-          serviceAccount: registry-service-account
+          serviceAccount: {{ service_account }}
           tag: {{ registry_host }}/builder
           stack:
             name: base
