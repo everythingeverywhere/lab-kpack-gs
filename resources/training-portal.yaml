@@ -9,5 +9,5 @@ spec:
   workshops:
   - name: lab-kpack-gs
     capacity: 1
-    expires: 60m
+    expires: 20m
     orphaned: 5m
