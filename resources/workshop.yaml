@@ -39,6 +39,7 @@ spec:
         - clusterstack
         - builds
         - builder
+        - builders
         - images
         - sourceresolvers
         verbs:
