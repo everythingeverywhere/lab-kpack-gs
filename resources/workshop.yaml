@@ -60,5 +60,5 @@ spec:
         name: kpack-user
       subjects:
       - kind: ServiceAccount
-        namespace: $(workshop_namespace)
+        namespace: $(session_namespace)
         name: $(service_account)
