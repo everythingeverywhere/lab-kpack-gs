@@ -20,7 +20,7 @@ text: |
         kind: Builder
         metadata:
           name: my-builder
-          namespace: default
+          namespace: $(workshop_namespace)
         spec:
           serviceAccount: registry-service-account
           tag: {{ registry_host }}/builder
