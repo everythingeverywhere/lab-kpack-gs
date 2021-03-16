@@ -20,9 +20,9 @@ text: |
         kind: Builder
         metadata:
           name: my-builder
-          namespace: {{workshop_namespace}}
+          namespace: {{session_namespace}}
         spec:
-          serviceAccount: {{ service_account }}
+          serviceAccount: registry-service-account
           tag: {{ registry_host }}/builder
           stack:
             name: base
