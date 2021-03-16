@@ -3,11 +3,11 @@ kind: Workshop
 metadata:
   name: lab-kpack-gs
 spec:
-  title: Markdown Sample
-  description: A sample workshop using Markdown
+  title: Getting Started with Kpack
+  description: "[`kpack`](https://github.com/pivotal/kpack) is a Kubernetes-native build service that builds container images on Kubernetes using [Cloud Native Buildpacks](../cnb-what-is). It takes source code  repositories (like GitHub), builds the code into a container image, and uploads it to the container registry of your choice."
   vendor: eduk8s.io
   difficulty: beginner
-  duration: 15m
+  duration: 20m
   url: https://github.com/everythingeverywhere/lab-kpack-gs
   content:
     image: jdk11-environment:*

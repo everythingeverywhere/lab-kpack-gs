@@ -1,8 +1,15 @@
-LAB - Markdown Sample
-=====================
+Prereqs:
+- kpack requires cluster admin permissions 
+- Kubernetes 1.16+
 
-Sample workshop content using Markdown formatting for pages.
+To install:
+Might need to login to sso, latest release from [here](https://github.com/pivotal/kpack/releases)
+kubectl apply -f https://github.com/pivotal/kpack/releases/download/v0.2.2/release-0.2.2.yaml 
 
+Ensure that the kpack controller & webhook have a status of Running using kubectl get.
+
+kubectl get pods --namespace kpack --watch
+---
 For more detailed information on how to create and deploy workshops, consult
 the documentation for eduk8s at:
 
