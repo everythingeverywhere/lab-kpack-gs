@@ -4,7 +4,7 @@ metadata:
   name: lab-kpack-gs
 spec:
   title: Getting Started with Kpack
-  description: "[`kpack`](https://github.com/pivotal/kpack) is a Kubernetes-native build service that builds container images on Kubernetes using [Cloud Native Buildpacks](../cnb-what-is). It takes source code  repositories (like GitHub), builds the code into a container image, and uploads it to the container registry of your choice."
+  description: kpack is a Kubernetes-native build service that builds container images on Kubernetes using Cloud Native Buildpacks. It takes source code  repositories (like GitHub), builds the code into a container image, and uploads it to the container registry of your choice."
   vendor: eduk8s.io
   difficulty: beginner
   duration: 20m
@@ -15,6 +15,8 @@ spec:
   session:
     namespaces:
       budget: small
+    resources:  
+      memory: 1.7Gi 
     applications:
       terminal:
         enabled: true
@@ -60,5 +62,5 @@ spec:
         name: kpack-user
       subjects:
       - kind: ServiceAccount
-        namespace: $(session_namespace)
+        namespace: $(workshop_namespace)
         name: $(service_account)
