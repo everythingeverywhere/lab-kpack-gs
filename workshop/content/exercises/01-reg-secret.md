@@ -15,7 +15,8 @@ text: |
             kpack.io/docker: {{ registry_host }}
         type: kubernetes.io/basic-auth
         stringData:
-          .dockerconfigjson: {{ registry_auth_file}}
+          username: "{{  registry_username }}"
+          password: "{{ registry_password }}"
 
 ```
 
