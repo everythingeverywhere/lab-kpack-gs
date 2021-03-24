@@ -32,7 +32,7 @@ text: |
             kind: ClusterStore
           order:
           - group: 
-            - id: paketo-buildpacks/paketo-buildpacks/native-image
+            - id: paketo-buildpacks/native-image
           - group:
             - id: paketo-buildpacks/java
           - group:
