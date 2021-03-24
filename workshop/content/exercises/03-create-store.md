@@ -10,10 +10,10 @@ text: |
         apiVersion: kpack.io/v1alpha1
         kind: ClusterStore
         metadata:
-          name: default
+          name: store
         spec:
           sources:
-          - image: gcr.io/paketo-buildpacks/paketo-buildpacks/native-image
+          - image: gcr.io/paketo-buildpacks/native-image
           - image: gcr.io/paketo-buildpacks/java
           - image: gcr.io/paketo-buildpacks/graalvm
           - image: gcr.io/paketo-buildpacks/dotnet-core
