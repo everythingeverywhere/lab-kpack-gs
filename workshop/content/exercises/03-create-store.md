@@ -14,13 +14,15 @@ text: |
         spec:
           sources:
           - image: gcr.io/paketo-buildpacks/java
+          - image: gcr.io/paketo-buildpacks/paketo-buildpacks/native-image
           - image: gcr.io/paketo-buildpacks/graalvm
+          - image: gcr.io/paketo-buildpacks/dotnet-core
           - image: gcr.io/paketo-buildpacks/java-azure
           - image: gcr.io/paketo-buildpacks/nodejs
-          - image: gcr.io/paketo-buildpacks/dotnet-core
           - image: gcr.io/paketo-buildpacks/go
           - image: gcr.io/paketo-buildpacks/php
           - image: gcr.io/paketo-buildpacks/nginx
+          - image: gcr.io/paketo-buildpacks/ruby
 
   ```
   

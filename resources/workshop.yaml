@@ -14,7 +14,7 @@ spec:
     files: github.com/everythingeverywhere/lab-kpack-gs
   session:
     namespaces:
-      budget: small
+      budget: large
     resources:  
       memory: 1.7Gi 
     applications:

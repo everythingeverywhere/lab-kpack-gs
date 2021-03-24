@@ -25,10 +25,10 @@ text: |
           serviceAccount: registry-service-account
           tag: {{ registry_host }}/builder
           stack:
-            name: base
+            name: stack
             kind: ClusterStack
           store:
-            name: default
+            name: store
             kind: ClusterStore
           order:
           - group:
