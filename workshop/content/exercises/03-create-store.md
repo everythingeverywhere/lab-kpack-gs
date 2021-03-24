@@ -13,8 +13,8 @@ text: |
           name: default
         spec:
           sources:
-          - image: gcr.io/paketo-buildpacks/java
           - image: gcr.io/paketo-buildpacks/paketo-buildpacks/native-image
+          - image: gcr.io/paketo-buildpacks/java
           - image: gcr.io/paketo-buildpacks/graalvm
           - image: gcr.io/paketo-buildpacks/dotnet-core
           - image: gcr.io/paketo-buildpacks/java-azure
